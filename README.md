@@ -1,116 +1,83 @@
-AI Driven Personalized study planner
-AI Study Planner is a Streamlit-based intelligent application that helps users plan, track, and 
-analyze their study progress using data analytics (Pandas), visualization (Plotly), and AI assistance (LangChain + Groq).
-What it Does
-allows users to plan and manage daily study tasks
-tracks study progress and completion status
-analyzes performance using pandas
-generates insights and suggestions using AI
-visualizes progress using interactive charts
-provides a simple and user-friendly dashboard
-Main Features
-1. Study Planner
-create daily/weekly study plans
-manage subjects and tasks
-mark tasks as completed
-structured planning interface
-2. AI Assistant
-generates study suggestions using LangChain + Groq
-helps in improving productivity
-provides personalized recommendations
-supports prompt-based interaction
-3. Progress Tracking
-tracks completed vs pending tasks
-calculates performance metrics
-maintains study history
-uses pandas for data processing
-4. Analytics Dashboard
-visualizes progress using plotly
-displays:
-completion rate
-subject-wise performance
-consistency trends
-interactive charts and graphs
-Tech Stack
-Python 3.9+
-Streamlit
-Pandas
-Plotly
-LangChain
-LangChain Core
-LangChain Groq
-Project Structure
+# 🚀 PrepPilot AI
 
-AI-Study-Planner/
-│
-├── app.py                  # main streamlit app
-├── requirements.txt       # dependencies
-├── .env                   # API key configuration
-│
-├── modules/
-│   ├── planner.py
-│   ├── analytics.py
-│   ├── ai_helper.py
-│
-├── data/
-│   └── study_data.csv
-Execution Process
-1. Clone the Repository
+### AI-Powered Personalized Exam Preparation Planner
 
-git clone https://github.com/your-username/ai-study-planner.git
-cd ai-study-planner
-2. Create Virtual Environment
+PrepPilot AI is an intelligent Streamlit-based application that helps students create personalized exam preparation plans, track their study progress, and analyze their performance.
 
-python -m venv venv
-Activate Environment
-Windows
-Bash
-venv\Scripts\activate
-Mac/Linux
+It combines **Generative AI, LangChain, Groq, MongoDB, and data visualization** to provide an interactive and personalized study planning experience.
 
-source venv/bin/activate
-3. Install Dependencies
+---
 
-pip install -r requirements.txt
-4. Configure Environment Variables
-Create a .env file:
+## ✨ Features
 
-GROQ_API_KEY=your_api_key_here
-5. Run the Application
+### 🔐 User Authentication
+- User registration and login
+- Secure password hashing using bcrypt
+- User-specific study data
+- MongoDB-based authentication
+- Logout functionality
 
-streamlit run app.py
-6. Open in Browser
+### 🤖 AI-Powered Study Plan Generation
+- Generates personalized exam preparation plans
+- Uses LangChain and Groq LLM
+- Considers:
+  - Exam subject
+  - Exam date
+  - Available daily study hours
+  - Learning style
+  - Weak topics
+  - Exam type
+- Provides structured AI-generated study recommendations
 
-http://localhost:8501
-Important Runtime Flow
-user enters study tasks
-data is stored and managed using pandas
-AI module generates suggestions via LangChain + Groq
-progress is tracked and updated
-plotly generates visual charts
-streamlit displays dashboard and analytics
-Data Handling
-study data stored in CSV / memory
-pandas used for:
-data cleaning
-analysis
-aggregation
-results updated dynamically
-Security And Notes
-API key stored in .env file
-do not expose API key publicly
-requires internet for AI features
-lightweight and easy to run locally
-Configuration
-.env → API keys
-requirements.txt → dependencies
-app.py → main configuration
-Future Enhancements
-user authentication system
-database integration (MySQL)
-mobile-friendly UI
-advanced AI recommendations
-cloud deployment
-Conclusion
-This project provides a smart and interactive study management system
- that combines planning, tracking, analytics, and AI-based suggestions to improve productivity and learning efficiency.
+### 📚 Study Planner
+- Create personalized study plans
+- Calculate remaining days until the exam
+- Calculate available study hours
+- Display generated preparation plans
+- Collect student feedback and ratings
+
+### 📈 Progress Tracking
+- Record daily study hours
+- Track study completion status
+- Maintain study history
+- Store progress data securely in MongoDB
+
+### 📊 Analytics Dashboard
+- Track study performance
+- Analyze completed study sessions
+- Display performance metrics
+- Visualize progress using interactive charts
+- Analyze user feedback and ratings
+
+### 🎨 Interactive UI
+- Streamlit-based interface
+- Personalized welcome screen
+- Responsive dashboard layout
+- Dark-themed sidebar
+- AI-focused visual design
+- Simple navigation
+
+---
+
+## 🧠 How It Works
+
+```text
+User Registration / Login
+          ↓
+     Home Dashboard
+          ↓
+    Enter Exam Details
+          ↓
+   AI Study Plan Generator
+          ↓
+    LangChain + Groq LLM
+          ↓
+ Personalized Study Plan
+          ↓
+   Track Daily Progress
+          ↓
+       MongoDB
+          ↓
+   Analytics Dashboard
+          ↓
+ Performance Insights
