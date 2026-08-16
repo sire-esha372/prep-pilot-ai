@@ -6,6 +6,13 @@ PrepPilot AI is an intelligent Streamlit-based application that helps students c
 
 It combines **Generative AI, LangChain, Groq, MongoDB, and data visualization** to provide an interactive and personalized study planning experience.
 
+## 🚀 Live Demo
+
+🔗 **[Launch PrepPilot AI](https://prep-pilot-ai.streamlit.app/)**
+
+Try the deployed application directly on Streamlit Community Cloud.
+
+
 ---
 
 ## ✨ Features
